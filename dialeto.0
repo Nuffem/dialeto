@@ -1,0 +1,11 @@
+dialeto = {
+  dígito: {
+    analisar: código => (
+      caractere = código[0]
+      caractere >= 48 & caractere <= 57 ? [caractere - 48 ""] : [{} código]
+    )
+    gerar: prefixo valor => `${prefixo}${valor + 48}`
+  }
+}
+
+dialeto
