@@ -1,0 +1,6 @@
+uniteste # https://raw.githubusercontent.com/Nuffem/uniteste.0/9a0376c57880ebcdf86eb55ca69b6eeefeda1bb0/uniteste.0
+dígito # dígito/0
+
+uniteste.principal([
+  dígito
+])

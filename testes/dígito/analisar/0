@@ -1,0 +1,8 @@
+uniteste # https://raw.githubusercontent.com/Nuffem/uniteste.0/9a0376c57880ebcdf86eb55ca69b6eeefeda1bb0/uniteste.0
+valor # valor.0
+resto # resto.0
+
+uniteste.descrever("Analisar" [
+  valor
+  resto
+])

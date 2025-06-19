@@ -1,6 +1,0 @@
-uniteste # https://raw.githubusercontent.com/Nuffem/uniteste.0/10165c6864e7b20aaac35379e9370b54b7e1f1cb/uniteste.0
-dígito # testes/dígito.0
-
-uniteste.principal([
-  dígito
-])

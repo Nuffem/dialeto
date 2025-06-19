@@ -1,8 +1,18 @@
 dialeto = {
   dígito: {
     analisar: código => (
-      caractere = código[0]
-      caractere >= 48 & caractere <= 57 ? [caractere - 48 ""] : [{} código]
+      código == "" ?
+        {
+          resto: ""
+        } :
+      código[0] >= 48 & código[0] <= 57 ?
+        {
+          valor: código[0] - 48
+          resto: código[1:]
+        } :
+      {
+        resto: código
+      }
     )
     gerar: prefixo valor => `${prefixo}${valor + 48}`
   }
