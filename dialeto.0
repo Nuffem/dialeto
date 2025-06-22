@@ -22,6 +22,33 @@ dialeto = {
         código: `${valor + 48}`
       }
   }
+  letra: {
+    analisar: código =>
+      código == "" ?
+        {
+          resto: ""
+        } :
+      (código[0] >= 97 & código[0] <= 122) ?
+        {
+          valor: código[0:1]
+          resto: código[1:]
+        } :
+      {
+        resto: código
+      }
+    gerar: valor =>
+      valor[.] != 1 ?
+        {
+          falha: "Esperava uma letra."
+        } :
+      (valor[0] < 97 | valor[0] > 122) ?
+        {
+          falha: "Esperava uma letra."
+        } :
+      {
+        código: valor
+      }
+  }
 }
 
 dialeto

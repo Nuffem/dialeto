@@ -1,0 +1,25 @@
+uniteste # https://raw.githubusercontent.com/Nuffem/uniteste/1185aa868908e0e745a80b40145d0cb2b1361e6b/uniteste.0
+dialeto # ../../../dialeto.0
+
+uniteste.descrever("Resto" [
+  uniteste.iguais(
+    dialeto.letra.analisar("").resto
+    ""
+  )
+  uniteste.iguais(
+    dialeto.letra.analisar("a").resto
+    ""
+  )
+  uniteste.iguais(
+    dialeto.letra.analisar("a.").resto
+    "."
+  )
+  uniteste.iguais(
+    dialeto.letra.analisar(".a.").resto
+    ".a."
+  )
+  uniteste.iguais(
+    dialeto.letra.analisar("ab").resto
+    "b"
+  )
+])
