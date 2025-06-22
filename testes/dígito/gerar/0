@@ -1,0 +1,8 @@
+uniteste # https://raw.githubusercontent.com/Nuffem/uniteste/1185aa868908e0e745a80b40145d0cb2b1361e6b/uniteste.0
+código # código.0
+falha # falha.0
+
+uniteste.descrever("Código" [
+  código
+  falha
+])

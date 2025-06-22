@@ -1,0 +1,13 @@
+uniteste # https://raw.githubusercontent.com/Nuffem/uniteste/1185aa868908e0e745a80b40145d0cb2b1361e6b/uniteste.0
+dialeto # ../../../dialeto.0
+
+uniteste.descrever("Código" [
+  uniteste.iguais(
+    dialeto.dígito.gerar(6).código
+    "6"
+  )
+  uniteste.iguais(
+    dialeto.dígito.gerar(4).código
+    "4"
+  )
+])

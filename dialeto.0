@@ -13,7 +13,14 @@ dialeto = {
       {
         resto: código
       }
-    gerar: prefixo valor => `${prefixo}${valor + 48}`
+    gerar: valor =>
+      valor < 0 | valor > 9 ?
+        {
+          falha: "Esperava um valor numérico de 0 a 9."
+        } :
+      {
+        código: `${valor + 48}`
+      }
   }
 }
 
