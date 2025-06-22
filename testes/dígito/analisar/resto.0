@@ -10,4 +10,16 @@ uniteste.descrever("Resto" [
     dialeto.dígito.analisar("3").resto
     ""
   )
+  uniteste.iguais(
+    dialeto.dígito.analisar("3.").resto
+    "."
+  )
+  uniteste.iguais(
+    dialeto.dígito.analisar(".3.").resto
+    ".3."
+  )
+  uniteste.iguais(
+    dialeto.dígito.analisar("31").resto
+    "1"
+  )
 ])
