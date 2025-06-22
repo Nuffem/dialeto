@@ -1,0 +1,17 @@
+uniteste # https://raw.githubusercontent.com/Nuffem/uniteste/1185aa868908e0e745a80b40145d0cb2b1361e6b/uniteste.0
+dialeto # ../../../dialeto.0
+
+uniteste.descrever("Falha" [
+  uniteste.iguais(
+    dialeto.faixa("1" "3").gerar("").falha
+    "Esperava um caractere de '1' a '3'."
+  )
+  uniteste.iguais(
+    dialeto.faixa("1" "3").gerar("0").falha
+    "Esperava um caractere de '1' a '3'."
+  )
+  uniteste.iguais(
+    dialeto.faixa("1" "3").gerar("4").falha
+    "Esperava um caractere de '1' a '3'."
+  )
+])

@@ -1,0 +1,17 @@
+uniteste # https://raw.githubusercontent.com/Nuffem/uniteste/1185aa868908e0e745a80b40145d0cb2b1361e6b/uniteste.0
+dialeto # ../../../dialeto.0
+
+uniteste.descrever("Valor" [
+  uniteste.iguais(
+    dialeto.faixa("1" "3").analisar("1").valor
+    "1"
+  )
+  uniteste.iguais(
+    dialeto.faixa("1" "3").analisar("2").valor
+    "2"
+  )
+  uniteste.iguais(
+    dialeto.faixa("1" "3").analisar("3").valor
+    "3"
+  )
+])

@@ -4,10 +4,10 @@ dialeto # ../../../dialeto.0
 uniteste.descrever("Falha" [
   uniteste.iguais(
     dialeto.letra.gerar("ab").falha
-    "Esperava uma letra."
+    "Esperava um caractere de 'a' a 'z'."
   )
   uniteste.iguais(
     dialeto.letra.gerar("1").falha
-    "Esperava uma letra."
+    "Esperava um caractere de 'a' a 'z'."
   )
 ])

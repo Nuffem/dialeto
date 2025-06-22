@@ -1,0 +1,11 @@
+dígito # dígito.0
+letra # letra.0
+faixa # faixa.0
+
+dialeto = {
+  dígito: dígito
+  letra: letra
+  faixa: faixa
+}
+
+dialeto

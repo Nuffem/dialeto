@@ -2,7 +2,7 @@ uniteste # https://raw.githubusercontent.com/Nuffem/uniteste/1185aa868908e0e745a
 código # código.0
 falha # falha.0
 
-uniteste.descrever("Código" [
+uniteste.descrever("Gerar" [
   código
   falha
 ])

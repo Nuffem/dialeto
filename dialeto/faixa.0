@@ -1,0 +1,23 @@
+início fim => {
+  analisar: código =>
+    (código[0] >= início[0] & código[0] <= fim[0]) ?
+      {
+        valor: código[0:1]
+        resto: código[1:]
+      } :
+    {
+      resto: código
+    }
+  gerar: valor =>
+    valor[.] != 1 ?
+      {
+        falha: `Esperava um caractere de '${início}' a '${fim}'.`
+      } :
+    (valor[0] < início[0] | valor[0] > fim[0]) ?
+      {
+        falha: `Esperava um caractere de '${início}' a '${fim}'.`
+      } :
+    {
+      código: valor
+    }
+}

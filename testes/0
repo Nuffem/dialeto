@@ -1,8 +1,10 @@
 uniteste # https://raw.githubusercontent.com/Nuffem/uniteste/1185aa868908e0e745a80b40145d0cb2b1361e6b/uniteste.0
 dígito # dígito/0
 letra # letra/0
+faixa # faixa/0
 
 uniteste.principal([
   dígito
   letra
+  faixa
 ])

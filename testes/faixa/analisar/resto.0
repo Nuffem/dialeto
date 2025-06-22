@@ -1,0 +1,33 @@
+uniteste # https://raw.githubusercontent.com/Nuffem/uniteste/1185aa868908e0e745a80b40145d0cb2b1361e6b/uniteste.0
+dialeto # ../../../dialeto.0
+
+uniteste.descrever("Resto" [
+  uniteste.iguais(
+    dialeto.faixa("1" "3").analisar("0").resto
+    "0"
+  )
+  uniteste.iguais(
+    dialeto.faixa("1" "3").analisar("1").resto
+    ""
+  )
+  uniteste.iguais(
+    dialeto.faixa("1" "3").analisar("2").resto
+    ""
+  )
+  uniteste.iguais(
+    dialeto.faixa("1" "3").analisar("3").resto
+    ""
+  )
+  uniteste.iguais(
+    dialeto.faixa("1" "3").analisar("4").resto
+    "4"
+  )
+  uniteste.iguais(
+    dialeto.faixa("1" "3").analisar("01").resto
+    "01"
+  )
+  uniteste.iguais(
+    dialeto.faixa("1" "3").analisar("11").resto
+    "1"
+  )
+])

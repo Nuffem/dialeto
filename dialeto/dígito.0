@@ -1,0 +1,23 @@
+{
+  analisar: código =>
+    código == "" ?
+      {
+        resto: ""
+      } :
+    (código[0] >= 48 & código[0] <= 57) ?
+      {
+        valor: código[0] - 48
+        resto: código[1:]
+      } :
+    {
+      resto: código
+    }
+  gerar: valor =>
+    valor < 0 | valor > 9 ?
+      {
+        falha: "Esperava um valor numérico de 0 a 9."
+      } :
+    {
+      código: `${valor + 48}`
+    }
+}
